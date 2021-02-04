@@ -1,92 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,800&amp;display=swap');
 * {
 	margin: 0;
 	padding: 0;
     box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
 body{
-	font-family: 'Poppins', sans-serif;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	min-height: 100vh;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	flex-wrap: wrap;
+	background: #070c24;
 }
-.container{
-	/* background: lightblue; */
-	width: 90%;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-    padding: 2rem 0rem;
+.container {
+	width: 1000px;
+	height: auto;
+	margin: 0rem auto;
+	display: grid;
+	grid-template-columns: repeat(auto-fit,minmax(320px,1fr));
+	grid-gap: 10px;
+	padding: 10px;
+	box-sizing: border-box;
 }
-.container__sub{
-	/* background: lightblue; */
-	display: flex;
-	flex-wrap: wrap;
-	width: 90%;
-	align-items: center;
-	justify-content: center;
-	padding: 1rem 0rem;
-	}
-.card{
-	min-height: 90vh;
-	width: 45rem;
-	border-radius: 30px;
-	padding: 0rem 5rem;
-	/* background: lightcoral; */
-	box-shadow: 0 20px 20px rgba(0,0,0,0.2), 0px 0px 50px rgba(0,0,0,0.2);
+.titulo {
+	position: relative;
+    display: flex;
+    flex-wrap: wrap;
+	
+	color: #fff;
+	
+	text-align: center;
 }
-.sneaker {
-	min-height: 15vh;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	background: #c60e26;
+.container .box{
+	position: relative;
+	background: #fff;
+	padding: 20px 40px 40px;
+	text-align: center;
+	overflow: hidden;
+	border-radius: 20px;
 }
-.sneaker img{
-	width: 7.5rem;
-	z-index: 2;
+.container .box:nth-child(1){
+	background: linear-gradient(42deg,#036eb7,#64aeff);
 }
-.title_1 h1{
+.container .box:nth-child(2){
+	background: linear-gradient(42deg,#036eb7,#ed55ff);
+}
+.container .box:nth-child(3){
+	background: linear-gradient(42deg,#036eb7,#00ff72);
+}
+.container .box:nth-child(4){
+	background: linear-gradient(42deg,#036eb7,#f4c030);
+}
+.container .box:nth-child(5){
+	background: linear-gradient(42deg,#036eb7,#ed55ff);
+}
+.container .box:nth-child(6){
+	background: linear-gradient(42deg,#036eb7,#64aeff);
+}
+.container .box h2{
+	position: relative;
+	margin: 0;
+	padding: 0;
 	font-size: 1.8rem;
-	color: #585858;
+	font-weight: 700;
+	color: #222;
+	z-index: 1;
+	opacity: 0.9;
 }
-.info h1{
-	font-size: 1.5rem;
+.container .box h3{
+	margin: 0;
+	padding: 0;
+	color: #fff;
+	font-size: 1.4rem;
+	text-transform: uppercase;
 }
-.info h3{
-	font-size: 1.2rem;
-	padding: 0.2rem 0rem;
-	color: #2077F7;
-	font-weight:400;
-}
-.sizes{
-	display: flex;
-	justify-content: space-between;
-	padding: 1.1rem 0rem;
-}
- button{
-	padding: 0.5rem 2.5rem;
-	background: none;
-	border:none;
-	box-shadow: 0px 5px 10px rgba(0,0,0,0.2);
-	border-radius: 30px;
-	font-weight:bold;
-	columns: #585858;
-	cursor: pointer;
-}
-button.active{
-	background: #585858;
-	color: #FFF;
-}
-.purchase{
-	margin-top: 0.5rem;
-}
-.purchase button{
-	width: 100%;
-	padding: 0.35rem 0rem;
+
+.container .box button{
 	background: #f54642;
+	color: #fff;
 	border:none;
-	cursor: pointer;
-	border-radius: 30px;
+	border-radius: 40px;
+	outline: none;padding: 4px 10px;
+	font-size: 1.3rem;
+	font-weight: 400;
+}
+.container .box p{
+	margin: 0;
+	padding: 0;
+	color: #fff;
+	font-size: 1.2rem;
+	font-weight: 300;
+	text-align:justify;
 }
